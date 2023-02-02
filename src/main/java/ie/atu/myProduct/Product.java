@@ -6,7 +6,7 @@ public class Product {
     private String code;
     private String description;
     private double price;
-    protected static int count = 0;
+    public static int count = 0;
 
     public Product() {
     }
