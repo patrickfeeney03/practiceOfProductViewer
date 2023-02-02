@@ -24,6 +24,17 @@ public class ProductDB {
             canItBeAnyName = mySoftware;
         }
 
+        if (productCode.equalsIgnoreCase("c4ll4")) {
+            Music myMusic = new Music();
+            // price, description, code; artist label
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Calladita");
+            myMusic.setPrice(5);
+            myMusic.setArtist("Bad Bunny");
+            myMusic.setLabel("Some Label");
+            canItBeAnyName = myMusic;
+        }
+
         return canItBeAnyName;
     }
 }
