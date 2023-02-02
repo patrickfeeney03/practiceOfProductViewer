@@ -6,6 +6,11 @@ public class ProductDB {
 
         if (productCode.equalsIgnoreCase("java")) {
             Book myBook = new Book();
+            // Tags for books: code, description, price, author.
+            myBook.setCode(productCode); // Product code comes from the user input.
+            myBook.setDescription("ATU Java Programming");
+            myBook.setPrice(10);
+            myBook.setAuthor("James");
         }
     }
 }
