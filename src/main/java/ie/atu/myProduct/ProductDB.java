@@ -35,6 +35,17 @@ public class ProductDB {
             canItBeAnyName = myMusic;
         }
 
+        if (productCode.equalsIgnoreCase("teve")) {
+            TV myTV = new TV();
+            // price, description, code; manufacture, screenSize
+            myTV.setCode(productCode);
+            myTV.setDescription("Television 4k 3D");
+            myTV.setPrice(1000);
+            myTV.setManufacture("Samsung");
+            myTV.setScreenSize(47);
+            canItBeAnyName = myTV;
+        }
+
         return canItBeAnyName;
     }
 }
