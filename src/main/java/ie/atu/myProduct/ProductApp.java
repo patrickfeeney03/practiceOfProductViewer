@@ -9,7 +9,7 @@ public class ProductApp {
         Scanner mySc = new Scanner(System.in);
         String userInput = "y";
         while(userInput.equalsIgnoreCase("y")) {
-            System.out.println("Product Code: ");
+            System.out.print("\nProduct Code: ");
             String productCode = mySc.nextLine();
 
             Product myProduct = ProductDB.getProduct(productCode);
