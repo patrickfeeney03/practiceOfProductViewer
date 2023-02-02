@@ -11,6 +11,8 @@ public class ProductDB {
             myBook.setDescription("ATU Java Programming");
             myBook.setPrice(10);
             myBook.setAuthor("James");
+            p = myBook;
         }
+        return p;
     }
 }
