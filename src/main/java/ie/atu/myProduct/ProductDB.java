@@ -2,7 +2,7 @@ package ie.atu.myProduct;
 
 public class ProductDB {
     public static Product getProduct(String productCode) {
-        Product p = null;
+        Product canItBeAnyName = null;
 
         if (productCode.equalsIgnoreCase("java")) {
             Book myBook = new Book();
@@ -11,8 +11,19 @@ public class ProductDB {
             myBook.setDescription("ATU Java Programming");
             myBook.setPrice(10);
             myBook.setAuthor("James");
-            p = myBook;
+            canItBeAnyName = myBook;
         }
-        return p;
+
+        if (productCode.equalsIgnoreCase("mc")) {
+            Software mySoftware = new Software();
+            // price, description, code; version
+            mySoftware.setCode(productCode);
+            mySoftware.setDescription("Minecraft by Mojang");
+            mySoftware.setPrice(25);
+            mySoftware.setVersion("1.19.2");
+            canItBeAnyName = mySoftware;
+        }
+
+        return canItBeAnyName;
     }
 }
